@@ -64,7 +64,7 @@
     font-family: 'Syne', sans-serif;
     font-size: 480px;
     font-weight: 800;
-    color: var(--dim);
+    color: var(--border);
     line-height: 1;
     pointer-events: none;
     letter-spacing: -20px;
@@ -290,6 +290,20 @@
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 72px 24px 56px; min-height: auto; }
+    .hero-date { font-size: 48px; letter-spacing: -2px; }
+    .streaks { grid-template-columns: 1fr; }
+    .streak-panel:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+    .streak-panel { padding: 48px 24px; }
+    .streak-number { font-size: 60px; }
+    .record { padding: 48px 24px; }
+    .record-grid { grid-template-columns: 1fr 1fr; }
+    .statement { padding: 48px 24px; }
+    .statement-text { font-size: 22px; }
+    .tiles-row { padding: 24px; }
   }
 </style>
 </head>
